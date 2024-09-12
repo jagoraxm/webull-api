@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['webull-api-production.up.railway.app']
 
+CORS_ALLOW_ALL_ORIGINS = True 
 
 # Application definition
 
