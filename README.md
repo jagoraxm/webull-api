@@ -66,7 +66,7 @@ Para importar un archivo JSON en Postman, sigue estos pasos:
 
 Abre Postman.
 1. Haz clic en "Importar" en la esquina superior izquierda.
-2. Selecciona "Archivo" y elige tu archivo JSON.
+2. Selecciona "Archivo" y elige tu archivo JSON. (webull-api.postman_collection.json)
 3. Haz clic en "Importar" para añadir las peticiones al entorno de Postman.
 4. El archivo JSON debe contener las peticiones que desees realizar a la API.
 
