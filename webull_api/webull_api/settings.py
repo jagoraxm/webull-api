@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'webull_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'webull',
+        'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'M0uch4n3',
-        'HOST': 'localhost',
-        'PORT': '5432'
+        'PASSWORD': 'OGDqihrQCLsyoyBJVSjNdyCeJTWTEtHH',
+        'HOST': 'junction.proxy.rlwy.net',
+        'PORT': '43733'
     }
     # 'default': {
     #     'ENGINE': 'django.db.backends.postgresql',
