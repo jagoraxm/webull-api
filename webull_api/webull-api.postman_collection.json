@@ -1,0 +1,301 @@
+{
+	"info": {
+		"_postman_id": "853d1e80-1ef1-49a9-afce-06406b29f2be",
+		"name": "webull-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29900966"
+	},
+	"item": [
+		{
+			"name": "getCompanies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI2MTk3NDQ4LCJpYXQiOjE3MjYxMTEwNDgsImp0aSI6Ijg0MmRmNGYwMTYyNzQ5OWQ4MDQwYzFkOGE3OTg4NzRkIiwidXNlcl9pZCI6MX0.-XJtx91QYQY6Zq-52AHAqJAMFfNRNXuwn-0Te1qv1I4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://webull-api-production.up.railway.app/api/companies",
+					"protocol": "https",
+					"host": [
+						"webull-api-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCompany",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI2MTk3NDQ4LCJpYXQiOjE3MjYxMTEwNDgsImp0aSI6Ijg0MmRmNGYwMTYyNzQ5OWQ4MDQwYzFkOGE3OTg4NzRkIiwidXNlcl9pZCI6MX0.-XJtx91QYQY6Zq-52AHAqJAMFfNRNXuwn-0Te1qv1I4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://webull-api-production.up.railway.app/api/companies/07634a73-0302-40ea-8d6c-3b506b50d483",
+					"protocol": "https",
+					"host": [
+						"webull-api-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"companies",
+						"07634a73-0302-40ea-8d6c-3b506b50d483"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createCompany",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI2MTk3NDQ4LCJpYXQiOjE3MjYxMTEwNDgsImp0aSI6Ijg0MmRmNGYwMTYyNzQ5OWQ4MDQwYzFkOGE3OTg4NzRkIiwidXNlcl9pZCI6MX0.-XJtx91QYQY6Zq-52AHAqJAMFfNRNXuwn-0Te1qv1I4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"name1\",\n    \"description\": \"description 1\",\n    \"symbol\": \"AA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://webull-api-production.up.railway.app/api/companies/",
+					"protocol": "https",
+					"host": [
+						"webull-api-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"companies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCompany",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI1ODQxMzQ3LCJpYXQiOjE3MjU4NDEwNDcsImp0aSI6IjA4MDA5YTEyN2M0YzRhMThiYWUwMjg5MDZjOTViNDRiIiwidXNlcl9pZCI6MX0.Vb04P_iMuFDY0dUMGX8RHySPIWY_wMKEWYoGiDvLRYM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"name11\",\n    \"description\": \"description 11\",\n    \"symbol\": \"MNEA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://webull-api-production.up.railway.app/api/companies/e1675cef-54a7-43a8-986c-60f9bea63129/",
+					"protocol": "https",
+					"host": [
+						"webull-api-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"companies",
+						"e1675cef-54a7-43a8-986c-60f9bea63129",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCompany",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI1ODQxMzQ3LCJpYXQiOjE3MjU4NDEwNDcsImp0aSI6IjA4MDA5YTEyN2M0YzRhMThiYWUwMjg5MDZjOTViNDRiIiwidXNlcl9pZCI6MX0.Vb04P_iMuFDY0dUMGX8RHySPIWY_wMKEWYoGiDvLRYM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"name11\",\n    \"description\": \"description 11\",\n    \"symbol\": \"MNEA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://webull-api-production.up.railway.app/api/companies/e1675cef-54a7-43a8-986c-60f9bea63129/",
+					"protocol": "https",
+					"host": [
+						"webull-api-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"companies",
+						"e1675cef-54a7-43a8-986c-60f9bea63129",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apiToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"test1\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://webull-api-production.up.railway.app/api/token/",
+					"protocol": "https",
+					"host": [
+						"webull-api-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refreshToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcyNTkyNzQ0NywiaWF0IjoxNzI1ODQxMDQ3LCJqdGkiOiIxOWM5ZDg5ZmYwZmQ0NzA5YjczMzg2Y2Y5MGJhM2FiNyIsInVzZXJfaWQiOjF9.pASSDXsJZsH5HgTQSrVkWnVF11zmRHFh9sjOFlyM1F0\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://webull-api-production.up.railway.app/api/token/refresh/",
+					"protocol": "https",
+					"host": [
+						"webull-api-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"token",
+						"refresh",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validateToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI1ODQxNjY1LCJpYXQiOjE3MjU4NDEwNDcsImp0aSI6IjZmNzdlZmVhZmY0NzQyYTc4Zjc1OTNiZGJkMzEzZmMwIiwidXNlcl9pZCI6MX0.rLFutRSfQkOc4njwRkLCEWQhvcf6UcLWSTaF3M_FZSg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://webull-api-production.up.railway.app/api/token/verify/",
+					"protocol": "https",
+					"host": [
+						"webull-api-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"token",
+						"verify",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
