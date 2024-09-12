@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn insert_data.wsgi
+web: python manage.py migrate && gunicorn webull_api.wsgi
