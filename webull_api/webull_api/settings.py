@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ashg4q^d2o((!gf7ebv65nihyhc44er+@n=vv_hk96vvy)8$+d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['webull-api-production.up.railway.app']
 
 
 # Application definition
