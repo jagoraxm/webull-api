@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn webull_api.wsgi
+web: python manage.py migrate && manage.py createsuperuser --username test1 --password 123456 --noinput --email 'jagoraxr.moucha@gmail.com' && gunicorn webull_api.wsgi
